@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/App.css';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -61,35 +61,33 @@ class App extends Component {
 
     return (
       <div id="main">
-      {/* Input fields */}
-      <input
-        type="text"
-        placeholder="Enter First Name"
-        value={name1}
-        onChange={(e) => this.setState({ name1: e.target.value })}
-        data-testid="input1"
-        name="name1"
-      />
-      <input
-        type="text"
-        placeholder="Enter Second Name"
-        value={name2}
-        onChange={(e) => this.setState({ name2: e.target.value })}
-        data-testid="input2"
-        name="name2"
-      />
-      {/* Buttons */}
-      <button onClick={this.calculateRelationship} data-testid="calculate_relationship">
-        Calculate Relationship Future
-      </button>
-      <button onClick={this.clearInputs} data-testid="clear">
-        Clear
-      </button>
-      {/* Display result */}
-      <h3 data-testid="relationship_status">{relationshipStatus}</h3>
-    </div>
-  );
-}
+        {/* Input fields */}
+        <input
+          type="text"
+          placeholder="Enter First Name"
+          value={name1}
+          onChange={(e) => this.setState({ name1: e.target.value })}
+          data-testid="input1"
+        />
+        <input
+          type="text"
+          placeholder="Enter Second Name"
+          value={name2}
+          onChange={(e) => this.setState({ name2: e.target.value })}
+          data-testid="input2"
+        />
+        {/* Buttons */}
+        <button onClick={this.calculateRelationship} data-testid="calculate_relationship">
+          Calculate Relationship Future
+        </button>
+        <button onClick={this.clearInputs} data-testid="clear">
+          Clear
+        </button>
+        {/* Display result */}
+        <h3 data-testid="relationship_status">{relationshipStatus}</h3>
+      </div>
+    );
+  }
 }
 
 export default App;
