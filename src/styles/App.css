@@ -10,3 +10,31 @@ button{
     justify-content: center;
     align-items: center;
 }
+/* App.css */
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type="text"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
