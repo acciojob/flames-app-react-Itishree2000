@@ -86,7 +86,9 @@ class App extends Component {
           Clear
         </button>
         {/* Display result */}
+        <div>
         <h3 data-testid="answer">{relationshipStatus}</h3>
+        </div>
       </div>
     );
   }
