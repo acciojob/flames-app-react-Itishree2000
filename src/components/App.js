@@ -63,6 +63,7 @@ class App extends Component {
       <div id="main">
         {/* Input fields */}
         <input
+        name='name1'
           type="text"
           placeholder="Enter First Name"
           value={name1}
@@ -70,6 +71,7 @@ class App extends Component {
           data-testid="input1"
         />
         <input
+        name='name2'
           type="text"
           placeholder="Enter Second Name"
           value={name2}
@@ -84,7 +86,7 @@ class App extends Component {
           Clear
         </button>
         {/* Display result */}
-        <h3 data-testid="relationship_status">{relationshipStatus}</h3>
+        <h3 data-testid="answer">{relationshipStatus}</h3>
       </div>
     );
   }
